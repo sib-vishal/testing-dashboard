@@ -1,6 +1,7 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import { NavUser } from "../nav-user";
+import ChatSupport from "../chatbot";
 
 export default function DashboardLayout({ children }) {
   const data = {
@@ -21,6 +22,7 @@ export default function DashboardLayout({ children }) {
           </div>
         </header>
         {children}
+        <ChatSupport />
       </main>
     </SidebarProvider>
   );
